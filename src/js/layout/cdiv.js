@@ -1,4 +1,4 @@
-import { div1, div2, div3, h1, h1_1, p1, p2, p3, p4, img1, vid1, li1, li2, li3, li4, br1, br2, br3 } from "../package/cPackage.js"
+import { div1, div2, div3, h1, h1_1, p1, p2, p3, p4, img1, iframe1, li1, li2, li3, li4, br1, br2, br3 } from "../package/cPackage.js"
 import data from "../../../misc/data/txt.json" assert {type: "json"}
 
 export default function cDiv() {
@@ -10,11 +10,14 @@ export default function cDiv() {
         li2.innerHTML=data.shift().li2_content;
         li3.innerHTML=data.shift().li3_content;
         li4.innerHTML=data.shift().li4_content;
-        vid1.src="../../../misc/vid/a.mp4"
-        vid1.width="600"
-        vid1.height="500"
-        vid1.controls=true;
-    div3.append(h1_1, li1, br1, li2, br2, li3, br3, li4, vid1);
+        iframe1.src="https://www.youtube-nocookie.com/embed/6mMZFoXbKqI"
+        iframe1.title="YouTube video player"
+        iframe1.allowFullscreen=true
+        iframe1.allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        iframe1.width="600"
+        iframe1.height="500"
+        iframe1.controls=true;
+    div3.append(h1_1, li1, br1, li2, br2, li3, br3, li4, iframe1);
 
     div2.id="center_content";
         h1.id="news_title"

@@ -5,6 +5,8 @@ export const h1_1=document.createElement("h1");
 export const h2=document.createElement("h2");
 export const h3=document.createElement("h3");
 
+export const iframe1 =document.createElement("iframe");
+
 //p 1-3
 export const p1=document.createElement("p");
 export const p2=document.createElement("p");
